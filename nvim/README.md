@@ -3,7 +3,7 @@
 ## Dependencies
 
 - NvChad
-- mason
+- mason.nvim
 
 ## Credits
 
