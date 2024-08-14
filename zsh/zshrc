@@ -1,0 +1,12 @@
+local ZSH_GLOBAL_CONFIG="${HOME}/.config/zsh/global/global.zsh"
+local ZSH_LOCAL_CONFIG="${HOME}/.config/zsh/local/local.zsh"
+
+# Load global config Zsh config
+source $ZSH_GLOBAL_CONFIG
+# Load global config
+[ -r $ZSH_LOCAL_CONFIG ] && source $ZSH_LOCAL_CONFIG
+
+# profile setup
+if type "zprof" > /dev/null 2>&1; then
+  zprof | less
+fi
