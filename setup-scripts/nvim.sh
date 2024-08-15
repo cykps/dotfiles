@@ -11,6 +11,10 @@ fi
 
 echo "[INFO] Nvim-Setup: Start"
 
+if [[ ! -d "${HOME}/.config" ]]; then
+  mkdir "${HOME}/.config"
+fi
+
 ln -s "${REPO_ROOT}/nvim" "${HOME}/.config/"
 
 echo "[INFO] Nvim-Setup: Completed"
