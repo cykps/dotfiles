@@ -1,4 +1,4 @@
-local P10K_CONFIG="${ZSH_GLOBAL}/p10k.zsh"
+declare P10K_CONFIG="${GLOBAL_CONFIG_DIR}/p10k.zsh"
 
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions

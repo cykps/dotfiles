@@ -1,1 +1,1 @@
-alias x='explorer.exe'
+alias x="explorer.exe"

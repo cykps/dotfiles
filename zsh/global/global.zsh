@@ -1,13 +1,15 @@
-local ZSH_GLOBAL="${HOME}/.config/zsh/global"
+local GLOBAL_CONFIG_DIR="${HOME}/.config/zsh/global"
 # Zsh config
-source ${ZSH_GLOBAL}/zsh.zsh
+source "${GLOBAL_CONFIG_DIR}/zsh.zsh"
 # Load Zinit
-source ${ZSH_GLOBAL}/zinit.zsh
+source "${GLOBAL_CONFIG_DIR}/zinit.zsh"
 # Load plugins
-source ${ZSH_GLOBAL}/plugins.zsh
-# completion
-source ${ZSH_GLOBAL}/completion.zsh
+source "${GLOBAL_CONFIG_DIR}/plugins.zsh"
+# custom-cmd
+source "${GLOBAL_CONFIG_DIR}/custom-cmd.zsh"
 # alias
-source ${ZSH_GLOBAL}/alias.zsh
+source "${GLOBAL_CONFIG_DIR}/alias.zsh"
 # only WSL
-[[ "$(uname -r)" == *microsoft* ]] && source ${ZSH_GLOBAL}/wsl.zsh
+[[ "$(uname -r)" == *microsoft* ]] && source "${GLOBAL_CONFIG_DIR}/wsl.zsh"
+# completion
+source "${GLOBAL_CONFIG_DIR}/completion.zsh"
