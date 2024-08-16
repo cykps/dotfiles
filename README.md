@@ -28,7 +28,7 @@ more docs: [zsh/README.md](./zsh/README.md)
 more docs: [nvim/README.md](./nvim/README.md)
 
 
-## Requirements
+## Pre-requisites
 
 ### [Zsh](https://www.zsh.org/)
 
@@ -36,5 +36,5 @@ Debian/Ubuntu: `sudo apt -y install zsh`
 
 
 ### [Neovim](https://neovim.io/)
-
+Version: 0.10
 Official install guide: [neovim/INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
