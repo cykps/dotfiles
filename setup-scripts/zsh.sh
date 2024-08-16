@@ -20,7 +20,7 @@ ln -s "${HOME}/.config/zsh/zshrc" "${HOME}/.zshrc"
 
 declare LOCAL_CONFIG_DIR="${REPO_ROOT}/zsh/local"
 if [[ ! -f "${LOCAL_CONFIG_DIR}" ]]; then
-  cp "${REPO_ROOT}/zsh/local-template" "${LOCAL_CONFIG_DIR}"
+  cp -r "${REPO_ROOT}/zsh/local-template" "${LOCAL_CONFIG_DIR}"
 fi
 
 echo "[INFO] Zsh-Setup: Completed"
