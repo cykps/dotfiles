@@ -18,6 +18,11 @@ return {
 
   {
     "williamboman/mason.nvim",
+  },
+
+  {
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = { "williamboman/mason.nvim" },
     opts = {
       ensure_installed = {
         "lua-language-server",
